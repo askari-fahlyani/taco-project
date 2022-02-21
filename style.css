@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url("https://jolly-kalam-23776e.netlify.app/restaurantwebsite/assets/images/topography.svg")
+    ,linear-gradient(110deg,#f93d66,#6d47d9);
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 50px;
+
+
+}
+.wrapper{
+
+}
+.nav{
+
+}
+.menu-btn{
+    padding: 10px;
+    width: 82px;
+    font-size: 12px;
+    background-color: #ffc600;
+    color: #272727;
+    border: none;
+}
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+}
+.menu-list li{
+    flex-grow: 1;
+    margin-right: 5px;
+    flex-basis: 10%;
+}
+.menu-list li a{
+    text-decoration: none;
+    background-color: #ffc600;
+    padding: 10px;
+    display: block;
+    /*width: 153px;*/
+    text-align: center;
+    color: #272727;
+    font-size: 20px;
+}
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 399px;
+    margin-top: 50px;
+}
+
+.left{
+    display: flex;
+background-image: url(imgs/taco.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+
+}
+.left>p{
+    /*margin-right: 400px*/
+}
+.left>h1,.left> p{
+    /*margin-right: 300px;*/
+    background-color: #ffc600;
+    color: #272727;
+    padding: 7px;
+    margin-left: 60px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.price-first{
+    background-color: #ffc600;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.price-first h1,.price-second h1{
+    font-size: 35px;
+}
+.price-first span,.price-second span{
+    font-size: 21px;
+    font-weight: bold;
+}
+.price-second{
+    background-color: #ffc600;
+    height: 50%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*main section*/
+.section{
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+
+
+
+.section .item{
+    background-color: white;
+
+
+    text-align: center;
+}
+.section .item>p{
+    color: rgba(0,0,0,0.5);
+
+}
+.item-text{
+
+}
+/*down section*/
+
+.about{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+}
+
+.about-left{
+    margin-right: 20px;
+
+}
+.about-middle button{
+    background-color: #ffc600;
+    padding: 6px;
+    width: 100px;
+    border: none;
+}
+/*last-section*/
+
+.last-section{
+    display: flex;
+    justify-content: center;
+
+}
+[aria-controls="menu-ul"]{
+    display: none;
+}
+
+/*responsive*/
+@media screen and (max-width:670px){
+    .menu-list{
+        flex-direction: column;
+        height: 250px;
+    }
+    .menu-list li{
+
+    }
+    .menu-list li a{
+        background-color: orange;
+    }
+    .header{
+        flex-direction: column;
+        height: 450px;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .price-second,.price-first{
+        background-color: orange;
+    }
+    .section{
+        margin-top: 20px;
+    }
+    .section>.item{
+        background-color: darksalmon;
+    }
+    .about{
+        flex-direction: column;
+    }
+}
+/*@media screen and (min-width:1000px){*/
+/*    .menu-btn{*/
+/*        display: none;*/
+/*    }*/
+
+/*}*/
+
+
